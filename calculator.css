@@ -1,0 +1,63 @@
+:root{
+    --background: #f0f0f0;
+    /*linear-gradient(right, #ce52ff, #ff3ef2)*/
+    --button-color: orange;
+    --border-color: #000000;
+}
+
+body{
+    min-height: 100vh;
+
+}
+
+.dark-mode {
+  background-color: black;
+  color: white;
+  border-color: white;
+}
+
+.calculator-display {
+  width: 220px; /* adjust to fit your button layout */
+  height: 60px;
+  background-color: white;
+  color: black;
+  font-size: 2rem;
+  text-align: right;
+  padding: 10px;
+  border: 2px solid var(--border-color, #ccc);
+  border-radius: 10px;
+  margin-bottom: 15px;
+  overflow-x: auto;
+  box-sizing: border-box;
+}
+
+#display{
+    display: flex;
+    flex-direction: column;
+    align-items: baseline;
+    margin-top: 1em;;
+    gap: 2em;
+}
+
+.calculator-button{
+    padding: 0;
+    border-radius: 50%;
+    width: 50px;
+    height: 50px;
+    /*Set width and height to the same value
+    /border-radius of 50% makes the button a square.*/
+    
+    /*background-image: linear-gradient(to right, #ce52ff, #ff3ef2);*/
+   border: 3px solid var(--border-color);
+}
+
+.symbol{
+    background-color: orange;
+    border-radius: 50%;
+    width: 50px;    
+    height: 50px;
+}
+
+.calculator-button:hover {
+  box-shadow: 0 0 8px #ce52ff;
+}

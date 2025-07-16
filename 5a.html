@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Variables Exercise</title>
+</head>
+<body>
+    <div class="button-group">
+
+    <button onclick="
+        cost += coffee;
+        cartQuantity++;
+        console.log(`Cost: ${cost}`)"
+        >Coffee<br>$5.00
+    </button>
+
+
+    <button onclick="
+        cost += bagels;
+        cartQuantity++;
+        console.log(`Cost: ${cost}`)"
+        >Bagels<br>$3.00
+    </button>
+
+    <button onclick="
+        cost += soup;
+        cartQuantity++;
+        console.log(`Cost: ${cost}`)"
+        >Soup<br>$9.00
+    </button>
+    
+    <button onclick="
+    //cost++;
+    console.log(`Total Cost of Food: ${cost}`);
+    //10% tax restaurant charges//
+    const tax = cost * 0.1
+    console.log(`Tax (10%): ${tax}`);
+    const totalCost = cost + tax
+    console.log(`Total cost: ${totalCost}`);
+    ">Cart</button>
+
+    <button onclick="
+    cost = 0;
+    cartQuantity = 0;
+    console.log('Cart was reset.');
+    console.log(`Cart quantity: ${cost}`);
+    ">Reset Cart</button>
+
+    <button onclick="
+    cartQuantity += 4;
+    console.log(`Cart quantity: ${cartQuantity}`);
+    ">+4</button>
+
+    <button onclick="
+    cartQuantity += 5;
+    console.log(`Cart quantity: ${cartQuantity}`);
+    ">+5</button>
+
+    <!--Remove from cart-->
+    <button onclick="
+    cartQuantity -= 1;
+    console.log(`Cart quantity: ${cartQuantity}`);
+    ">Remove from cart</button>
+    
+    <!--Decrease by 2-->
+    <button onclick="
+    cartQuantity -= 2;
+    console.log(`Cart quantity: ${cartQuantity}`);
+    ">-2</button>
+
+    <!--Decrease by 3-->
+    <button onclick="
+    cartQuantity -= 3;
+    console.log(`Cart quantity: ${cartQuantity}`);
+    ">-3</button>
+
+    </div>
+
+    <script>
+        const name = 'Sanaa';
+        console.log(`My name is: ${name}`);
+        const coffee = 5.00
+        const bagels = 3.00
+        const soup = 9.00
+        let cost = 0
+
+        let cartQuantity = 0
+
+    </script>
+</body>
+</html>

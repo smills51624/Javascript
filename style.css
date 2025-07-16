@@ -1,0 +1,22 @@
+
+.dark-mode {
+  background-color: black;
+  color: white;
+  border-color: white;
+}
+
+.cart{
+    background-color: yellow;
+    gap: 1em;
+}
+.buy{
+    background-color: orange;
+    color: black;
+}
+
+.button-group {
+  display: flex;
+  gap: 6px; /* Adds space between flex items (buttons) */
+}
+
+

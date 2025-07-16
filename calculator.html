@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculator</title>
+
+    <link rel="stylesheet" href="calculator.css">
+
+</head>
+<body>
+    <nav>
+       <!--<button id="theme-toggle" onclick="toggleDarkMode()">Dark mode</button>-->
+
+        <button id="theme-toggle" onclick="myFunction()">Dark mode</button>
+    </nav>
+
+    <!-- Display for the calculator -->
+    <!-- This is where the result of the calculation will be shown -->
+    <div class="calculator-display" id="display">0</div>
+
+    <div class="calculator-container">
+        <h1>Calculator</h1>
+    <p>
+    <button class="calculator-button" onclick="calculation += '1';console.log(calculation);">1</button>
+
+    <button class="calculator-button" onclick="calculation += '2';console.log(calculation);">2</button>
+
+    <button class="calculator-button" onclick="calculation += '3';console.log(calculation);">3</button>
+
+    <button class="calculator-button symbol" onclick="calculation += ' + ';console.log(calculation);">+</button>
+    </p>
+
+    <!--Row 2-->
+    <p>
+    <button class="calculator-button" onclick="
+    calculation += '4';console.log(calculation);">4</button>
+
+    <button class="calculator-button" onclick="
+    calculation += '5';console.log(calculation);">5</button>
+
+    <button class="calculator-button" onclick="
+    calculation += '6';console.log(calculation);">6</button>
+
+    <button class="calculator-button symbol" onclick="
+    calculation += ' - ';console.log(calculation);">-</button>
+    </p>
+
+    
+    <!--Row 3-->
+    <p>
+    <button class="calculator-button" onclick="
+    calculation += '7';console.log(calculation);">7</button>
+
+    <button class="calculator-button" onclick="
+    calculation += '8';console.log(calculation);">8</button>
+
+    <button class="calculator-button" onclick="
+    calculation += '9';console.log(calculation);">9</button>
+
+    <button class="calculator-button symbol" onclick="
+    calculation += ' * ';console.log(calculation);">*</button>
+    </p>
+
+     <!--Row 4-->
+    <p>
+    <button class="calculator-button" onclick="
+    calculation += '0';console.log(calculation);">0</button>
+
+    <button class="calculator-button" onclick="
+    calculation += '.';console.log(calculation);">.</button>
+
+    <button class="calculator-button" onclick="
+    calculation = eval(calculation);console.log(calculation);
+    ">=</button>
+
+    <!--
+    //converts calc into actual math
+    // Note: eval() takes a string and runs it as code.
+      // Avoid using eval() in real world projects since
+      // it can potentially be given harmful code to run.
+      // Only use eval() for learning purposes.-->
+
+    <button class="calculator-button symbol" onclick="
+    calculation /= ' / ';console.log(calculation);">/</button>
+    </p>
+
+
+    <button class="calculator-button" onclick="
+    calculation = 0;
+    console.log(calculation);
+    ">Clear</button>
+
+    
+    <script>
+    let calculation = '';
+
+    function myFunction() {
+        const element = document.body;
+        const button = document.getElementById("theme-toggle");
+        element.classList.toggle("dark-mode");
+        // Toggle the button text based on the current mode
+         // If the body has the class "dark-mode", set button text to "Light mode"
+         // Otherwise, set it to "Dark mode"
+
+        if (element.classList.contains("dark-mode")) {
+            button.textContent = "Light mode";
+        } else {
+            button.textContent = "Dark mode";}
+        }
+
+    
+     
+    </script>
+    
+</body>
+</html>
